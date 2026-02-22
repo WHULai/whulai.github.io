@@ -21,6 +21,9 @@
       <div class="periodical"><em>{{ link.conference }}</em>
       </div>
     <div class="links">
+      {% if link.web %} 
+      <a href="{{ link.web }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Web</a>
+      {% endif %}
       {% if link.pdf %} 
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       {% endif %}
@@ -36,6 +39,9 @@
       {% if link.notes %} 
       <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
       {% endif %}
+      {% if link.notes2 %} 
+      <br><small>{{ link.notes2 | markdownify | remove: '<p>' | remove: '</p>' }}</small>
+      {% endif %}
       {% if link.others %} 
       {{ link.others }}
       {% endif %}
@@ -48,4 +54,7 @@
 {% endfor %}
 
 </ol>
+<p style="margin-top: 10px; font-size: 0.85em; color: #666;">
+  <sup>†</sup> Co-first authors; <sup>*</sup> Corresponding authors
+</p>
 </div>

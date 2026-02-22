@@ -1,187 +1,178 @@
-# The Minimal Light Theme
+# Personal Academic Homepage
 
-[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/homepage?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
+This is the source code of my personal academic homepage, built based on the [Minimal Light theme](https://github.com/yaoyao-liu/minimal-light) by [Yaoyao Liu](https://github.com/yaoyao-liu).
 
-\[[Demo the theme](https://minimal-light-theme.yliu.me/)\]  \[[简体中文](https://github.com/yaoyao-liu/minimal-light/blob/master/README_zh_Hans.md) | [繁體中文](https://github.com/yaoyao-liu/minimal-light/blob/master/README_zh_Hant.md) | [Deutsche](https://github.com/yaoyao-liu/minimal-light/blob/master/README_de.md)\]
- 
-*This is the source code of my homepage. I build this website based on [minimal](https://github.com/orderedlist/minimal).*
-<br>
-*Feel free to use and share the source code anywhere you like.*
+**Live Site:** https://whulai.github.io
 
-An improved vision from [@Xiao-Chenguang](https://github.com/Xiao-Chenguang): [[link](https://github.com/Xiao-Chenguang/minimal-light)]
+## About This Project
 
-**The latest version of my homepage is available here: <br><https://github.com/yaoyao-liu/homepage>**
+This academic homepage showcases my research, projects, and academic achievements as a Robotics Engineering student at Wuhan University. The site is designed to provide a clean and professional presentation of my academic profile.
 
 ## Features
 
-- Simple and elegant personal homepage theme
-- Jekyll theme, automatically deployed by GitHub Pages
-- Basic search engine optimization
-- Mobile friendly
-- Supporting Markdown 
-- Supporting dark mode
+- Clean and elegant academic homepage design
+- Jekyll-based static site with GitHub Pages deployment
+- Responsive design for mobile devices
+- Publications showcase with links to papers and code
+- Research interests and project highlights
+- Skills and awards section
+- Dark mode support
 
-## Project Architecture
+## Project Structure
 
 ```
 .
-├── _data                    
-|   └── publications.yml                      # the YAML file for publications
-├── _includes                    
-|   ├── publications.md                       # the Markdown file for publications
-|   └── services.md                           # the Markdown file for services
-├── _layouts                  
-|   └── homepage.html                         #  the html template for the homepage 
-├── _sass
-|   ├── minimal-light.scss                    #  this file will be compiled into a CSS file to control the style of the page              
-|   └── minimal-light-no-dark-mode.scss       #  this file is similar to minimal-light.scss with the dark mode disabled
-├── assets                                    #  some files
-├── html_source_file                          #  compiled HTML files
-├── .gitignore                                #  this file specifies intentionally untracked files that Git should ignore
-├── CNAME                                     #  the custom domain, will be used by GitHub page sevice
-├── Gemfile                                   #  a RubyGems related file
-├── LICENSE                                   #  the license file
-├── README.md                                 #  the readme file (English)
-├── README_de.md                              #  the readme file (German)
-├── README_zh_Hans.md                         #  the readme file (Simplified Chinese)
-├── README_zh_Hant.md                         #  the readme file (Traditional Chinese)
-├── _config.yml                               #  the Jekyll configuration file, including some options of the page  
-└── index.md                                  #  the content of the index page, using Markdown
+├── _data/                    # Data files (publications, etc.)
+├── _includes/                # Reusable markdown includes
+├── _layouts/                 # HTML templates
+├── _sass/                    # Stylesheets
+├── assets/                   # Static assets (images, files)
+├── .gitignore               # Git ignore rules
+├── CNAME                    # Custom domain configuration
+├── Gemfile                  # Ruby dependencies
+├── _config.yml              # Jekyll configuration
+├── index.md                 # Main homepage content
+└── README.md               # This file
 ```
 
 ## Getting Started
 
-This template can be used in the following two ways: 
-- **Using with the GitHub Pages Service.** GitHub will provide you with a server to generate and host web pages.
-- **Using locally with Jekyll.** You may install Jekyll on your own computer and generate static web pages (i.e., HTML files) with this template. After that, you may upload the HTML files to your server.
+### Prerequisites
 
-The detailed instructions are available below.
+- Ruby (version 2.5 or higher)
+- Bundler gem
+- Jekyll
 
+### Local Development
 
-### Using with the GitHub Pages Service
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:WHULai/whulai.github.io.git
+   cd whulai.github.io
+   ```
 
-There are two ways to use this template on GitHub:
+2. **Install dependencies:**
+   ```bash
+   bundle install
+   bundle add webrick
+   ```
 
-#### Fork this repository
-- Fork this repository (or [use this repository as a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)) and change the name to `your-username.github.io`.
+3. **Run the development server:**
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-- Enable the GitHub pages for that repository following the steps [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
+4. **Preview the site:**
+   Open your browser and navigate to http://localhost:4000
 
-#### Using this repository as a remote theme
-To use this theme, add the following to your repository's `_config.yml`:
+5. **Build static files:**
+   Static HTML files will be generated in the `_site` directory.
 
-```yaml
-remote_theme: yaoyao-liu/minimal-light
-```
+### GitHub Pages Deployment
 
-Please note that adding the above line will directly apply all the default settings in this repository to yours.
+This site is configured to automatically deploy via GitHub Pages. Simply push changes to the repository, and GitHub Pages will build and serve the site.
 
-If you hope to edit any files (e.g., `index.md`), you still need to copy them to your repository.
+## Customization
 
-### Using Locally with Jekyll
+### Configuration
 
-First, install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/). The install instructions can be found here: <https://jekyllrb.com/docs/installation/#guides>
+Edit `_config.yml` to update:
+- Personal information (name, position, affiliation)
+- Contact details and links
+- Images (avatar, favicon)
+- Theme settings (dark mode, font)
 
-Then, clone this repository:
+### Content
 
-```bash
-git clone https://github.com/yaoyao-liu/minimal-light.git
-cd minimal-light
-```
-Install and run:
+- **index.md:** Main homepage content, research interests, projects, and awards
+- **_data/publications.yml:** Add or update publications
+- **_includes/:** Modify included sections (publications, services)
+- **assets/img/:** Add profile picture and other images
 
-```bash
-bundle install
-bundle add webrick
-bundle exec jekyll server
-```
-View the live page using `localhost`:
-<http://localhost:4000>. You can get the HTML files in `_site` folder.
+### Styling
 
-### Using the HTML version
+Edit `_sass/minimal-light.scss` to customize the appearance of the site.
 
-The compiled HTML files are available in the `html_source_file` folder. If you don't like Jekyll, you may directly edit and use the HTML version.
+## Deployment
 
-## Customizing
+### Using GitHub Pages (Recommended)
 
-### Configuration variables
+The site automatically deploys to GitHub Pages when changes are pushed to the main branch. The site is available at: https://whulai.github.io
 
-The Minimal Light theme will respect the following variables, if set in your site's `_config.yml`:
+### Using Docker (Alternative Preview Method)
 
-  ```yaml
-# Basic Information 
-title: Your Name
-position: Ph.D. Student
-affiliation: Your Affiliation
-email: yourname (at) example.edu
+For an isolated environment, you can use Docker to preview the site:
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+1. **Build and run with Docker:**
+   ```bash
+   docker run --rm -v "$PWD":/usr/src/app -p "4000:4000" -it ruby:3.1 bash
+   ```
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/
-cv_link: assets/files/curriculum_vitae.pdf
-github_link: https://github.com/
-linkedin: https://www.linkedin.com/
-twitter: https://twitter.com/
+2. **Inside the container:**
+   ```bash
+   cd /usr/src/app
+   bundle install
+   bundle exec jekyll serve --host 0.0.0.0 --port 4000
+   ```
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+3. **Preview:**
+   Open http://localhost:4000 in your browser
 
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+### Local Jekyll Installation
 
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+Alternatively, you can install Jekyll locally following the [official Jekyll installation guide](https://jekyllrb.com/docs/installation/).
 
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
+## Acknowledgments
 
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-google_analytics: UA-111540567-4
-  ```
-### Edit `index.md`
+This project is based on the [Minimal Light theme](https://github.com/yaoyao-liu/minimal-light) created by [Yaoyao Liu](https://github.com/yaoyao-liu), which is licensed under the Creative Commons Zero v1.0 Universal License.
 
-Create `index.md` and add your personal information. It supports **Markdown** and **HTML** syntax.
+I would like to express my sincere gratitude to:
+- [Yaoyao Liu](https://github.com/yaoyao-liu) for creating the elegant Minimal Light theme
+- The Jekyll community for the excellent static site generator
+- GitHub for providing the Pages hosting service
 
-### Edit included files
-
-There are two markdown files included in `index.md`. They are `_includes/publications.md` and `_includes/service.md`, respectively. These two files also support **Markdown** and **HTML** syntax. If you don't hope to include these two files, you may remove the following lines in `index.md`:
-https://github.com/yaoyao-liu/minimal-light/blob/b38070cd0b6bce45d8a885f3828549af8f82b7cb/index.md?plain=1#L21-L23
-
-If you hope to edit the publication list without changing the format, you may edit `_data/publications.yml`:
-https://github.com/yaoyao-liu/minimal-light/blob/77b1b3b31d4561091bcd739f37a2e1880e8b5ca5/_data/publications.yml#L3-L11
-
-
-### Stylesheet
-
-If you'd like to add your own custom styles, you may edit `_sass/minimal-light.scss`.
-
-### Layouts
-
-If you'd like to change the theme's HTML layout, you may edit `_layout/homepage.html`.
+The Minimal Light theme itself is inspired by:
+- [pages-themes/minimal](https://github.com/pages-themes/minimal)
+- [orderedlist/minimal](https://github.com/orderedlist/minimal)
+- [al-folio](https://github.com/alshedivat/al-folio)
 
 ## License
 
-This work is licensed under a [Creative Commons Zero v1.0 Universal](https://github.com/yaoyao-liu/minimal-light/blob/master/LICENSE) License.
+This project inherits the same license as the Minimal Light theme: Creative Commons Zero v1.0 Universal License.
 
-## Acknowledgements
+## Contact
 
-Our project uses the source code from the following repositories:
+For questions or suggestions regarding this website, please contact:
+- Email: weilai@weilai.group
+- GitHub: https://github.com/WHULai
 
-* [pages-themes/minimal](https://github.com/pages-themes/minimal)
+## Quick Preview Guide
 
-* [orderedlist/minimal](https://github.com/orderedlist/minimal)
+### Easiest Method: Docker
 
-* [al-folio](https://github.com/alshedivat/al-folio)
+```bash
+# Run in the project directory
+docker run --rm -v "$PWD":/site -p 4000:4000 -it starefossen/github-pages
+```
+
+Then open http://localhost:4000 in your browser.
+
+### Alternative Method: Local Jekyll
+
+```bash
+# Install dependencies
+bundle install
+bundle add webrick
+
+# Run server
+bundle exec jekyll serve
+
+# View at http://localhost:4000
+```
+
+### Build Static Files
+
+```bash
+bundle exec jekyll build
+# HTML files will be in _site directory
+```
