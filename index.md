@@ -31,12 +31,12 @@ Applying machine learning and time-series modeling to improve robustness, calibr
 
 ## Projects
 
-**Thermoelectric-Based Airflow Sensing and Convective Heat Transfer Modeling**
+<strong><a href="https://pulmomask.github.io/" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">Thermoelectric-Based Airflow Sensing and Convective Heat Transfer Modeling</a></strong>
 
 Undergraduate Research Project (2025.04 - Present)
 - Developing novel airflow sensing techniques using thermoelectric principles.
 - Modeling convective heat transfer for enhanced sensor performance.
-- Manuscript in preparation for submission.
+- Manuscript submitted.
 
 ## Awards & Honors
 
@@ -44,14 +44,14 @@ Undergraduate Research Project (2025.04 - Present)
   - Core Team Member
   - Developed a vision-guided robotic sorting system for household waste classification
 
+## Languages
+
+**Chinese:** Native  
+**English:** IELTS 7.0 (CEFR C1, Jan 2026)
+
 ## Skills
 
 - **Programming:** Python, C/C++, R, MATLAB
 - **Robotics & Hardware:** PyTorch, STM32, Arduino, ESP32, PCB Design
 - **Simulation & Tools:** SolidWorks, COMSOL Multiphysics, AutoCAD
 - **Web & Others:** HTML/CSS, Git, Linux, Astro (Personal Blog)
-
-## Languages
-
-**Chinese:** Native  
-**English:** IELTS 7.0 (CEFR C1, Jan 2026)
