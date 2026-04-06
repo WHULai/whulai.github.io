@@ -31,12 +31,12 @@ Applying machine learning and time-series modeling to improve robustness, calibr
 
 ## Projects
 
-<strong><a href="https://pulmomask.github.io/" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: underline;">Thermoelectric-Based Airflow Sensing and Convective Heat Transfer Modeling</a></strong>
+<strong><a href="https://pulmomask.github.io/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Thermoelectric-Based Airflow Sensing and Convective Heat Transfer Modeling</a></strong>
 
 Undergraduate Research Project (2025.04 - Present)
 - Developing novel airflow sensing techniques using thermoelectric principles.
 - Modeling convective heat transfer for enhanced sensor performance.
-- Manuscript submitted.
+- Related manuscript under review.
 
 ## Awards & Honors
 
