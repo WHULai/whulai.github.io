@@ -57,6 +57,12 @@
         <email>{{ site.email }}</email>
         {% endif %}
         <br>
+        {% if site.office %}
+        <p class="office-location">
+          <i class="fas fa-location-dot" aria-hidden="true"></i>
+          <span>{{ site.office }}</span>
+        </p>
+        {% endif %}
         <div class="social-icons">
         {% if site.school_email %}
         <a style="margin: 0 5px 0 0" href="mailto:{{ site.school_email }}" target="_blank" rel="noopener">

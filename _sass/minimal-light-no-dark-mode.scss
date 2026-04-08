@@ -86,6 +86,28 @@ email {
     font-family: "Ubuntu Mono";
 }
 
+.office-location {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0.7rem 0 0.9rem;
+  padding: 0 0.25rem;
+  color: #595959;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.office-location i {
+  color: #043361;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.office-location span {
+  display: block;
+}
+
 .icon-button i{
   background:none;
   color:white;
