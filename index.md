@@ -4,8 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student in Robotics Engineering at Wuhan University. My research lies at the intersection of sensing, embedded systems, and robotic intelligence.
-
+I am an undergraduate student in Robotics Engineering at Wuhan University. My research lies at the intersection of sensing, embedded systems, and robotic intelligence.  
 I am interested in developing sensor-integrated robotic systems that combine physical modeling and data-driven methods to improve perception and autonomy. My long-term goal is to advance robust, interpretable sensing architectures for intelligent robotic platforms.
 
 ## Education
@@ -20,10 +19,8 @@ My research interests broadly center on the integration of physical sensing, mod
 
 - **Intelligent Sensing and Physical Modeling**  
 Development of thermoelectric and other physics-based sensing mechanisms, including convective heat transfer modeling and signal interpretation for physiological and environmental monitoring.
-
 - **Robotics and Autonomous Systems**  
 System-level design of robotic perception and control architectures, with interests in autonomous navigation and sensor-driven decision-making.
-
 - **Learning-Enhanced Physical Systems**  
 Applying machine learning and time-series modeling to improve robustness, calibration, and system intelligence in sensor-integrated robotic platforms.
 
@@ -31,9 +28,8 @@ Applying machine learning and time-series modeling to improve robustness, calibr
 
 ## Projects
 
-<strong><a href="https://pulmomask.github.io/" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">Thermoelectric-Based Airflow Sensing and Convective Heat Transfer Modeling</a></strong>
-
-Undergraduate Research Project (2025.04 - Present)
+<strong><a href="https://pulmomask.github.io/" target="_blank" rel="noopener noreferrer" style="color: #043361; text-decoration: none;">Thermoelectric-Based Airflow Sensing and Convective Heat Transfer Modeling</a></strong>  
+Undergraduate Research Project (2025.04 - Present)  
 - Developing novel airflow sensing techniques using thermoelectric principles.
 - Modeling convective heat transfer for enhanced sensor performance.
 - Related manuscript under review.
@@ -51,7 +47,7 @@ Undergraduate Research Project (2025.04 - Present)
 
 ## Skills
 
-- **Programming:** Python, C/C++, R, MATLAB
-- **Robotics & Hardware:** PyTorch, STM32, Arduino, ESP32, PCB Design
-- **Simulation & Tools:** SolidWorks, COMSOL Multiphysics, AutoCAD
-- **Web & Others:** HTML/CSS, Git, Linux, Astro (Personal Blog)
+**Programming**: Python (PyTorch, NumPy, Pandas, Matplotlib), C/C++, MATLAB, R.  
+**Robotics & Hardware**: STM32, ESP32, Arduino, PCB Design (KiCad).  
+**Modeling & Simulation**: SolidWorks, COMSOL Multiphysics, AutoCAD.  
+**Tools & Workflow**: Linux, Git, LaTeX.
