@@ -277,6 +277,11 @@ h2 {
   font-size: 157%;
 }
 
+.section-title-link {
+  color: #043361;
+  text-decoration: none;
+}
+
 @media (prefers-color-scheme: dark) {
   h1, h3, h4, h5, h6 {
     color:rgb(62, 183, 240);
@@ -284,6 +289,21 @@ h2 {
 
   h2 {
     color:rgb(62, 183, 240);
+  }
+
+  .section-title-link {
+    color: rgb(62, 183, 240);
+  }
+}
+
+.section-title-link:hover {
+  color: #043361;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-title-link:hover {
+    color: rgb(62, 183, 240);
   }
 }
 
